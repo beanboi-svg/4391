@@ -154,7 +154,7 @@ div[name="hero-content"].hero {
     height: 700px;
     background:
         linear-gradient(0deg, rgba(0, 0, 0, 0.8) 20%, transparent 100%),
-        url('https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/asset-1.jpg');
+        url('https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/asset-1.png');
     background-size: cover;
     background-position: center;
 }
@@ -452,8 +452,8 @@ a[name="brand"] {
     text-align: left;
 }
 p[name="main-text"] {
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 31px;
 }
 p[name="footer-text"] {
     width: 320px;
