@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frederick Theatre</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/web-clip.png">
-    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/favicon.svg">
-    <meta property="og:image" content="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/open-graph.png">
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/beanboi-svg/4391/main/favicon.svg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/beanboi-svg/4391/main/open-graph.png">
 </head>
 <body>
     <div name="nav">
         <div name="nav-wrapper">
-            <a href="https://beanboi-svg.github.io/4391/" name="brand" target="_blank" rel="noopener noreferrer">
+            <a href="index.html" name="brand">
                 <span>Frederick Theatre</span>.org
             </a>
             <div name="nav-links">
-                <a href="#about">About</a>
-                <a href="#leadership">Leadership</a>
-                <a href="#information">Information</a>
+                <a href="about.html">About</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="information.html">Information</a>
             </div>
             <div name="hidden-menu">Menu</div>
         </div>
@@ -70,37 +69,27 @@
             <div name="close">Close</div>
         </div>
         <div name="menu-hidden-wrapper">
-            <a href="#about">About</a>
-            <a href="#leadership">Leadership</a>
-            <a href="#information">Information</a>
+            <a href="about.html">About</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="information.html">Information</a>
         </div>
     </div>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
-    // Existing menu-hidden logic...
     const menuButton = document.querySelector('div[name="hidden-menu"]');
     const menuOverlay = document.querySelector('div[name="menu-hidden"]');
     const closeButton = document.querySelector('div[name="menu-hidden-close"]');
+    
+    menuOverlay.style.display = "none";
 
-    if (menuOverlay) menuOverlay.style.display = "none";
-
-    if (menuButton) menuButton.addEventListener("click", function () {
-        if (menuOverlay) menuOverlay.style.display = "flex";
+    menuButton.addEventListener("click", function () {
+        menuOverlay.style.display = "flex";
         document.body.style.overflow = "hidden";
     });
 
-    if (closeButton) closeButton.addEventListener("click", function () {
-        if (menuOverlay) menuOverlay.style.display = "none";
+    closeButton.addEventListener("click", function () {
+        menuOverlay.style.display = "none";
         document.body.style.overflow = "";
-    });
-
-    // Add popup for nav links
-    const navLinks = document.querySelectorAll('div[name="nav-links"] a, div[name="menu-hidden-wrapper"] a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            alert('Navigation links are placeholders and not yet connected to pages, as the site is still under development.');
-        });
     });
 });
 </script>
