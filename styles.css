@@ -391,6 +391,14 @@ div[name="menu-hidden-wrapper"] a {
         height: auto;
         display: block;
     }
+        a:active,
+div[name="nav-links"] a:active,
+a[name="brand"]:active,
+div[name="hidden-menu"]:active,
+div[name="menu-hidden-wrapper"] a:active,
+div[name="socials-wrapper"] a:active {
+    color: #9c1919;
+}
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -655,14 +663,12 @@ div[name="socials-wrapper"] svg {
     div[name="menu-hidden-close"]:hover {
         color: #9c1919;
     }
-}
-
-/* Touch devices tap feedback */
-a:active,
+    a:active,
 div[name="nav-links"] a:active,
 a[name="brand"]:active,
 div[name="hidden-menu"]:active,
 div[name="menu-hidden-wrapper"] a:active,
 div[name="socials-wrapper"] a:active {
     color: #9c1919;
+}
 }
