@@ -34,6 +34,15 @@ h1 {
     font-variant: small-caps;
     text-align: center;
 }
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1C2550;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 h3 {
     font-weight: 700;
     font-size: 14px;
@@ -77,10 +86,9 @@ p[name="main-text"] {
     font-family: 'Spectral', serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 35px;
     color: #1C2550;
     text-align: left;
-    margin-top: 20px;
 }
 p[name="footer-text"] {
     width: 500px;
@@ -158,6 +166,27 @@ div[name="hero-content"].hero {
     background-size: cover;
     background-position: center;
 }
+div[name="hero-content"].about {
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.8) 20%, transparent 100%),
+        url('https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/asset-3.png');
+    background-size: cover;
+    background-position: center;
+}
+div[name="hero-content"].leadership {
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.8) 20%, transparent 100%),
+        url('https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/asset-4.png');
+    background-size: cover;
+    background-position: center;
+}
+div[name="hero-content"].information {
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.8) 20%, transparent 100%),
+        url('https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/asset-5.png');
+    background-size: cover;
+    background-position: center;
+}
 div[name="hero-logo"] {
     display: flex;
     flex-direction: column;
@@ -182,6 +211,14 @@ div[name="main"] {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
+    gap: 0px;
+}
+div[name="main-header"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 50px 0px 30px 0px;
+    width: 100%;
 }
 div[name="footer"] {
     display: flex;
@@ -264,7 +301,6 @@ div[name="menu-hidden-wrapper"] a {
     text-decoration: none;
     letter-spacing: 0;
 }
-
 div[name="menu-hidden-wrapper"] a:hover {
     color: #9c1919;
 }
@@ -276,6 +312,11 @@ div[name="menu-hidden-wrapper"] a:hover {
         line-height: 50px;
         align-items: center;
         letter-spacing: 5px;
+    }
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
     }
     h3 {
         font-weight: 700;
@@ -387,6 +428,11 @@ div[name="menu-hidden-wrapper"] a:hover {
         line-height: 33px;
         letter-spacing: 5px;
     }
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    }
     h3 {
         font-size: 10px;
         line-height: 12px;
@@ -452,8 +498,8 @@ a[name="brand"] {
     text-align: left;
 }
 p[name="main-text"] {
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 15px;
+    line-height: 28px;
 }
 p[name="footer-text"] {
     width: 320px;
