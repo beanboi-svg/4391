@@ -62,9 +62,6 @@ div[name="nav-links"] a {
     text-decoration: none;
     transition: color 0.2s;
 }
-div[name="nav-links"] a:hover {
-    color: #9c1919;
-}
 a[name="brand"] {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -78,9 +75,6 @@ a[name="brand"] {
 }
 a[name="brand"] span {
     font-weight: 700;
-}
-a[name="brand"]:hover {
-    color: #9c1919;
 }
 p[name="main-text"] {
     font-family: 'Spectral', serif;
@@ -138,10 +132,6 @@ div[name="hidden-menu"]  {
     letter-spacing: 4px;
     text-transform: uppercase;
     cursor: pointer;
-}
-div[name="hidden-menu"]:hover {
-    color: #9c1919;
-    transition: color 0.2s;
 }
 div[name="hero"] {
     display: flex;
@@ -250,9 +240,6 @@ div[name="socials-wrapper"] a {
     margin: 0;
     gap: 0;
 }
-div[name="socials-wrapper"] a:hover {
-    color: #9c1919;
-}
 div[name="socials-wrapper"] svg {
     width: 40px;
     height: auto;
@@ -300,9 +287,6 @@ div[name="menu-hidden-wrapper"] a {
     color: #1C2550;
     text-decoration: none;
     letter-spacing: 0;
-}
-div[name="menu-hidden-wrapper"] a:hover {
-    color: #9c1919;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -649,8 +633,36 @@ div[name="socials-wrapper"] svg {
     div[name="menu-hidden-close"] {
         transition: color 0.2s;
     }
+}
+@media (hover: hover) and (pointer: fine) {
+    div[name="nav-links"] a:hover {
+        color: #9c1919;
+    }
+    a[name="brand"]:hover {
+        color: #9c1919;
+    }
+    div[name="hidden-menu"]:hover {
+        color: #9c1919;
+        transition: color 0.2s;
+    }
+    div[name="socials-wrapper"] a:hover {
+        color: #9c1919;
+    }
+    div[name="menu-hidden-wrapper"] a:hover {
+        color: #9c1919;
+    }
     div[name="hidden-menu"]:hover,
     div[name="menu-hidden-close"]:hover {
         color: #9c1919;
     }
+}
+
+/* Touch devices tap feedback */
+a:active,
+div[name="nav-links"] a:active,
+a[name="brand"]:active,
+div[name="hidden-menu"]:active,
+div[name="menu-hidden-wrapper"] a:active,
+div[name="socials-wrapper"] a:active {
+    color: #9c1919;
 }
