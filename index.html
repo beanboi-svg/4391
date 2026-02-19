@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frederick Theatre</title>
+    <title data-i18n="meta.title">Frederick Theatre</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="assets/i18n.js" defer></script>
     <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/favicon.svg">
     <meta property="og:image" content="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/open-graph.png">
 </head>
@@ -15,30 +16,34 @@
                 <span>Frederick Theatre</span>.org
             </a>
             <div name="nav-links">
-                <a href="about/">About</a>
+                <a href="/about/" data-i18n="nav.about">About</a>
+                <select name="language-select" aria-label="Language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
             </div>
-            <div name="hidden-menu">Menu</div>
+            <div name="hidden-menu" data-i18n="nav.menu">Menu</div>
         </div>
     </div>
     <div name="hero">
         <div name="hero-content" class="hero">
             <div name="hero-logo">
-                <h3>Welcome to</h3>
+                <h3 data-i18n="home.welcomeTo">Welcome to</h3>
                 <h1>Frederick Theatre</h1>
             </div>
         </div>
     </div>
     <div name="main-wrapper">
         <div name="main">
-            <p name="main-text">Frederick Theatre is a vibrant and welcoming community where students come together to create, perform, and grow. Through plays, musicals, and events, we celebrate storytelling, build lifelong skills, and make space for every voice to be heard, onstage and off.</p>
+            <p name="main-text" data-i18n="home.mainText">Frederick Theatre is a vibrant and welcoming community where students come together to create, perform, and grow. Through plays, musicals, and events, we celebrate storytelling, build lifelong skills, and make space for every voice to be heard, onstage and off.</p>
         </div>
     </div>
     <div name="footer">
         <div name="footer-wrapper">
             <p name="footer-text">
-                Frederick Theatre operates as a program under the 
-                <a href="https://www.fhs-music.org" target="_blank" rel="noopener noreferrer">FHS Music Foundation</a>, 
-                a registered 501(c)(3) nonprofit organization. 2026 All Rights Reserved.
+                <span data-i18n="footer.index.prefix">Frederick Theatre operates as a program under the </span>
+                <a href="https://www.fhs-music.org" target="_blank" rel="noopener noreferrer" data-i18n="footer.foundation">FHS Music Foundation</a>
+                <span data-i18n="footer.index.suffix">, a registered 501(c)(3) nonprofit organization. 2026 All Rights Reserved.</span>
             </p>
             <div name="socials-wrapper">
                 <a href="https://www.facebook.com/fhstheatre4391/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -64,10 +69,14 @@
     </div>
     <div name="menu-hidden">
         <div name="menu-hidden-close">
-            <div name="close">Close</div>
+            <div name="close" data-i18n="nav.close">Close</div>
         </div>
         <div name="menu-hidden-wrapper">
-            <a href="about/">About</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <select name="language-select" aria-label="Language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
         </div>
     </div>
     <script>

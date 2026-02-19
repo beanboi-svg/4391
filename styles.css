@@ -136,6 +136,19 @@ div[name="nav-links"] {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    align-items: center;
+}
+select[name="language-select"] {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1C2550;
+    background: #fff;
+    border: 1px solid #E0E5EF;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
 }
 div[name="hidden-menu"]  {
     display: none;
@@ -302,6 +315,16 @@ div[name="menu-hidden-wrapper"] a {
     color: #1C2550;
     text-decoration: none;
     letter-spacing: 0;
+}
+div[name="menu-hidden-wrapper"] select[name="language-select"] {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1C2550;
+    background: transparent;
+    border: 1px solid rgba(28, 37, 80, 0.25);
+    border-radius: 10px;
+    padding: 8px 12px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -655,6 +678,17 @@ div[name="socials-wrapper"] svg {
     div[name="hidden-menu"],
     div[name="menu-hidden-close"] {
         transition: color 0.2s;
+    }
+    div[name="menu-hidden-wrapper"] select[name="language-select"] {
+        font-family: 'Spectral', serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 34px;
+        color: #1C2550;
+        background: transparent;
+        border: 1px solid rgba(28, 37, 80, 0.25);
+        border-radius: 12px;
+        padding: 10px 14px;
     }
 }
 @media (hover: hover) and (pointer: fine) {

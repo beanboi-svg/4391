@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frederick Theatre</title>
+    <title data-i18n="meta.title">Frederick Theatre</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="../assets/i18n.js" defer></script>
     <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/favicon.svg">
     <meta property="og:image" content="https://raw.githubusercontent.com/beanboi-svg/4391/main/assets/open-graph.png">
 </head>
@@ -15,33 +16,37 @@
                 <span>Frederick Theatre</span>.org
             </a>
             <div name="nav-links">
-                <a href="about/">About</a>
+                <a href="/about/" data-i18n="nav.about">About</a>
+                <select name="language-select" aria-label="Language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
             </div>
-            <div name="hidden-menu">Menu</div>
+            <div name="hidden-menu" data-i18n="nav.menu">Menu</div>
         </div>
     </div>
     <div name="hero">
         <div name="hero-content" class="about">
             <div name="hero-heading">
-                <h1>About</h1>
+                <h1 data-i18n="about.heading">About</h1>
             </div>
         </div>
     </div>
     <div name="main-wrapper">
         <div name="main">
-            <p name="main-text">Frederick Theatre is committed to creating a theatre environment where every student feels seen, valued, and welcome. Our mission is to ensure that theatre is accessible to all, regardless of race, religion, ability, experience level, gender identity, sexual orientation, economic background, or language. We believe that the stage should reflect the diversity of our community, and we strive to build a space where students can grow as artists, collaborators, and individuals.</p>
+            <p name="main-text" data-i18n="about.mainText1">Frederick Theatre is committed to creating a theatre environment where every student feels seen, valued, and welcome. Our mission is to ensure that theatre is accessible to all, regardless of race, religion, ability, experience level, gender identity, sexual orientation, economic background, or language. We believe that the stage should reflect the diversity of our community, and we strive to build a space where students can grow as artists, collaborators, and individuals.</p>
             <div name="main-header">
-                <h2>International Thespian Society</h2>
+                <h2 data-i18n="about.itsHeading">International Thespian Society</h2>
             </div>
-            <p name="main-text">Troupe 4391 is a proud member of the International Thespian Society, an honor organization for high school theatre students. The International Thespian Society promotes excellence in theatre education and recognizes student achievement in all aspects of theatre production and performance. Their mission to celebrate student artists, support inclusive theatre programs, and develop leadership through the arts directly supports the values we uphold at Frederick High School. As part of ITS, we are committed to fostering a community where students can grow, collaborate, and find belonging through the transformative power of theatre.</p>
+            <p name="main-text" data-i18n="about.mainText2">Troupe 4391 is a proud member of the International Thespian Society, an honor organization for high school theatre students. The International Thespian Society promotes excellence in theatre education and recognizes student achievement in all aspects of theatre production and performance. Their mission to celebrate student artists, support inclusive theatre programs, and develop leadership through the arts directly supports the values we uphold at Frederick High School. As part of ITS, we are committed to fostering a community where students can grow, collaborate, and find belonging through the transformative power of theatre.</p>
         </div>
     </div>
     <div name="footer">
         <div name="footer-wrapper">
             <p name="footer-text">
-                Frederick Theatre operates as a program under the 
-                <a href="https://www.fhs-music.org" target="_blank" rel="noopener noreferrer">FHS Music Foundation</a>, 
-                a registered 501(c)(3) nonprofit organization.
+                <span data-i18n="footer.about.prefix">Frederick Theatre operates as a program under the </span>
+                <a href="https://www.fhs-music.org" target="_blank" rel="noopener noreferrer" data-i18n="footer.foundation">FHS Music Foundation</a>
+                <span data-i18n="footer.about.suffix">, a registered 501(c)(3) nonprofit organization.</span>
             </p>
             <div name="socials-wrapper">
                 <a href="https://www.facebook.com/fhstheatre4391/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -67,10 +72,14 @@
     </div>
     <div name="menu-hidden">
         <div name="menu-hidden-close">
-            <div name="close">Close</div>
+            <div name="close" data-i18n="nav.close">Close</div>
         </div>
         <div name="menu-hidden-wrapper">
-            <a href="about/">About</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <select name="language-select" aria-label="Language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
         </div>
     </div>
     <script>
