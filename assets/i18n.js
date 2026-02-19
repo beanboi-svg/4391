@@ -44,7 +44,7 @@
         "La Tropa 4391 es un orgulloso miembro de la International Thespian Society, una organización de honor para estudiantes de teatro de secundaria. La International Thespian Society promueve la excelencia en la educación teatral y reconoce los logros estudiantiles en todos los aspectos de la producción y la actuación. Su misión de celebrar a los artistas estudiantiles, apoyar programas de teatro inclusivos y desarrollar liderazgo a través de las artes apoya directamente los valores que defendemos en Frederick High School. Como parte de ITS, estamos comprometidos a fomentar una comunidad donde los estudiantes puedan crecer, colaborar y encontrar pertenencia a través del poder transformador del teatro.",
       "footer.index.prefix": "Frederick Theatre funciona como un programa bajo la ",
       "footer.about.prefix": "Frederick Theatre funciona como un programa bajo la ",
-      "footer.foundation": "Fundación de Música de FHS",
+      "footer.foundation": "FHS Music Foundation",
       "footer.index.suffix":
         ", una organización sin fines de lucro registrada 501(c)(3). 2026 Todos los derechos reservados.",
       "footer.about.suffix":
