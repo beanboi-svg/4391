@@ -62,6 +62,12 @@
     return SUPPORTED_LANGS.includes(normalized) ? normalized : "en";
   }
 
+  function getPathLang() {
+    const path = window.location?.pathname || "/";
+    if (path === "/es" || path.startsWith("/es/")) return "es";
+    return null;
+  }
+
   function getSavedLang() {
     try {
       return normalizeLang(window.localStorage.getItem(STORAGE_KEY));
@@ -76,6 +82,22 @@
     } catch {
       // ignore
     }
+  }
+
+  function toLanguagePath(targetLang) {
+    const normalizedTarget = normalizeLang(targetLang);
+    const path = window.location?.pathname || "/";
+
+    if (normalizedTarget === "es") {
+      if (path === "/es" || path.startsWith("/es/")) return path;
+      if (path === "/") return "/es/";
+      return `/es${path}`;
+    }
+
+    // en
+    if (path === "/es" || path === "/es/") return "/";
+    if (path.startsWith("/es/")) return path.slice(3) || "/";
+    return path;
   }
 
   function t(lang, key) {
@@ -112,14 +134,27 @@
     const selects = document.querySelectorAll('select[name="language-select"]');
     for (const select of selects) {
       select.addEventListener("change", (e) => {
-        const value = e.target?.value;
+        const value = normalizeLang(e.target?.value);
+        saveLang(value);
+
+        const targetPath = toLanguagePath(value);
+        const currentPath = window.location?.pathname || "/";
+        if (targetPath !== currentPath) {
+          const search = window.location?.search || "";
+          const hash = window.location?.hash || "";
+          window.location.assign(`${targetPath}${search}${hash}`);
+          return;
+        }
+
         setLanguage(value);
       });
     }
   }
 
   function init() {
-    const lang = getSavedLang() || "en";
+    const pathLang = getPathLang();
+    const lang = pathLang ?? "en";
+    saveLang(lang);
     applyTranslations(lang);
     syncLanguageSelects(lang);
     bindLanguageSelects();
@@ -132,4 +167,3 @@
     init();
   }
 })();
-
