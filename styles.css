@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E0DDCF;
+    background-color: rgba(255, 153, 204, 0.10);
     padding: 12px 50px;
 }
 
