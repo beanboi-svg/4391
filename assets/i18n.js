@@ -8,6 +8,8 @@
       "nav.about": "About",
       "nav.menu": "Menu",
       "nav.close": "Close",
+      "banner.text": "Get tickets for Legally Blonde The Musical.",
+      "banner.button": "Get tickets",
       "home.welcomeTo": "Welcome to",
       "home.mainText":
         "Frederick Theatre is a vibrant and welcoming community where students come together to create, perform, and grow. Through plays, musicals, and events, we celebrate storytelling, build lifelong skills, and make space for every voice to be heard, onstage and off.",
@@ -33,6 +35,8 @@
       "nav.about": "Acerca de",
       "nav.menu": "Menú",
       "nav.close": "Cerrar",
+      "banner.text": "Consigue boletos para Legally Blonde The Musical.",
+      "banner.button": "Boletos",
       "home.welcomeTo": "Bienvenidos a",
       "home.mainText":
         "Frederick Theatre es una comunidad vibrante y acogedora donde los estudiantes se reúnen para crear, actuar y crecer. A través de obras, musicales y eventos, celebramos la narración, desarrollamos habilidades para toda la vida y damos espacio para que todas las voces sean escuchadas, dentro y fuera del escenario.",
